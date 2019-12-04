@@ -1,7 +1,7 @@
 import { useLocalStorage } from "./useLocalStorage";
 import { useEffect } from "react";
 
-const useDarkMode = () => {
+export const useDarkMode = () => {
     // Call useLocalStorage and pass in the key you want to use to store whether or not dark mode is enabled
     const [values, setValues] = useLocalStorage("nighttime", true);
     const body = document.querySelector("body");
